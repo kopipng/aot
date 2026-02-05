@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=checkbox] {
+ accent-color: red;
+}
+
+input[type=radio] {
+ accent-color: green;
+
+input[type=range] {
+ accent-color: rgb(0, 0, 255);
+}
+
+input[type=progress] {
+ accent-color: hsl(360, 100%, 50%);
+}
+
+</style>
+</head>
+<body>
+
+<h1>The accent-color Property</h1>
+
+<h3>Accent color for checkboxes:</h3>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car" checked>
+<label for="vehicle2"> I have a car<label><br><br>
+
+<h3>Accent color for radiobuttons:</h3>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS" checked>
+<label for="css">CSS</label><br><br>
+
+<h3>Range field</h3>
+<label for="vol">Volume:</label>
+<input type="range" id="vol" name="vol" min="0" max="100">
+
+<h3>Progress bar thingy</h3>
+<label for="file">Downloading:</label>
+<progress id="file" value="20" max="100">20%</progress>
